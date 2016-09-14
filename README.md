@@ -6,3 +6,4 @@
 可以适用于摆地摊的时候，还是很小巧方便的管理货物的，相当于超市的扫码枪带后台管理系统
 线上apk地址：http://zhushou.360.cn/detail/index/soft_id/2968208
 想看效果的直接点击下载
+[https://github.com/737297447/warehouse/blob/master/29f5ce965d4fe8e20b270367876b7ee2.png]
