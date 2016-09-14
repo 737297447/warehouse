@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg"
+    android:orientation="vertical" >
+
+    <com.lingdian.ui.main.tools.chart.PieChart
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_margin="10dip" >
+
+        <com.lingdian.ui.main.tools.chart.PieView
+            android:id="@+id/lotteryView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:tag="pieView" />
+
+        <com.lingdian.ui.main.tools.chart.MyButton
+            android:id="@+id/MyBt"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="top|right"
+            android:tag="pieButton" />
+
+        <TextView
+            android:id="@+id/MyTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginBottom="16dip"
+            android:gravity="center"
+            android:tag="pieText"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+    </com.lingdian.ui.main.tools.chart.PieChart>
+
+</LinearLayout>

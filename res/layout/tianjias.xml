@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_action_title_bar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/all_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/shangpgt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70sp"
+            android:layout_marginTop="20dp"
+            android:paddingTop="5sp"
+            android:text="书本条码："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/tianjiashangge"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/shangpgt"
+            android:hint="例：10001000"
+            android:phoneNumber="true" />
+
+        <Button
+            android:id="@+id/zhijiesaomiao"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tianjiashangge"
+            android:background="@drawable/bt_nonal_bg"
+            android:onClick="saomiao"
+            android:text="直接扫描" />
+
+        <TextView
+            android:id="@+id/shangpmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tianjiashangge"
+            android:layout_marginLeft="70sp"
+            android:paddingTop="5sp"
+            android:text="书本名称："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/tianjiashangme"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/shangpmt"
+            android:layout_below="@id/tianjiashangge"
+            android:layout_toRightOf="@id/shangpmt"
+            android:hint="例：早生的太阳" />
+
+        <TextView
+            android:id="@+id/shangpjt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tianjiashangme"
+            android:layout_marginLeft="70sp"
+            android:paddingTop="5sp"
+            android:text="计量单位："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/tianjiashangje"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tianjiashangme"
+            android:layout_toRightOf="@id/shangpjt"
+            android:hint="例：本/箱" />
+
+        <TextView
+            android:id="@+id/gongyingshang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tianjiashangje"
+            android:layout_marginLeft="70sp"
+            android:paddingTop="5sp"
+            android:text="供应商名："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:id="@+id/gsmcs"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tianjiashangje"
+            android:layout_toRightOf="@id/shangpjt"
+            android:prompt="@string/xzgs" />
+
+        <Button
+            android:id="@+id/shangpin_save"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gongyingshang"
+            android:layout_marginLeft="90sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bt_nonal_bg"
+            android:text="保存" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gongyingshang"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/shangpin_save"
+            android:background="@drawable/bt_nonal_bg"
+            android:onClick="back"
+            android:text="返回" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/gsmcs"
+            android:layout_alignLeft="@+id/zhijiesaomiao"
+            android:layout_alignRight="@+id/zhijiesaomiao"
+            android:textColor="@color/red"
+            android:text="如果当前货物没有条码，可以手动输入您自己定义的条码，然后在&apos;售货&apos;栏中点击&apos;点击售货&apos;->&apos;生成二维码&apos;，粘贴到自己的商品上" />
+
+    </RelativeLayout>
+
+   
+
+</LinearLayout>
